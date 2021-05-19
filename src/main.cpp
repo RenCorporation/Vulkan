@@ -3,10 +3,10 @@
 void Cleanup() {
 	Vulkan::Window::Destroy();
 	// All child objects created using instance must have been destroyed prior to destroying instance
+	Vulkan::GraphicsPipeline::Destroy();
 	Vulkan::ImageViews::Destroy();
 	Vulkan::SwapChain::Destroy();
 	Vulkan::Surface::Destroy();
-	Vulkan::GraphicsPipeline::Destroy();
 	Vulkan::Device::Logical::Destroy();
 	Vulkan::Instance::Destroy();
 }
