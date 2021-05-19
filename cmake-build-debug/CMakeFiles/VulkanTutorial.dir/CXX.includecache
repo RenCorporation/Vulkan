@@ -42,10 +42,6 @@ vulkan/vulkan.h
 ../ValidationLayer/ValidationLayer.hpp
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ValidationLayer/ValidationLayer.hpp
 
-/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp
-GraphicsPipeline.hpp
-/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
-
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
 vulkan/vulkan.h
 -

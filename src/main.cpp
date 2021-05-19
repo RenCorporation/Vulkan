@@ -6,11 +6,9 @@ void Cleanup() {
 	Vulkan::ImageViews::Destroy();
 	Vulkan::SwapChain::Destroy();
 	Vulkan::Surface::Destroy();
+	Vulkan::GraphicsPipeline::Destroy();
 	Vulkan::Device::Logical::Destroy();
 	Vulkan::Instance::Destroy();
-	Vulkan::
-		GraphicsPipeline::
-			Destroy();
 }
 
 int main() {
