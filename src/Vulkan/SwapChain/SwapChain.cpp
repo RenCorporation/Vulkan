@@ -1,6 +1,7 @@
 #include "SwapChain.hpp"
 
 VkSwapchainKHR s_SwapChain;
+VkExtent2D     s_Extent;
 
 /*----------------------------------------------------------------------------------------------------------*/
 Vulkan::SwapChain::SwapChainSupportDetails Vulkan::SwapChain::QuerySwapChainSupport(VkPhysicalDevice device) {
@@ -75,7 +76,7 @@ void Vulkan::SwapChain::Create() {
 
 	VkSurfaceFormatKHR surfaceFormat = ChooseSwapSurfaceFormat(swapChainSupport.formats);
 	VkPresentModeKHR   presentMode   = ChooseSwapPresentMode(swapChainSupport.presentModes);
-	VkExtent2D         extent        = ChooseSwapExtent(swapChainSupport.capabilities);
+	s_Extent                         = ChooseSwapExtent(swapChainSupport.capabilities);
 
 	uint32_t imageCount = swapChainSupport.capabilities.minImageCount + 1;
 	if (swapChainSupport.capabilities.maxImageCount
@@ -88,7 +89,7 @@ void Vulkan::SwapChain::Create() {
 	createInfo.sType            = VK_STRUCTURE_TYPE_SWAPCHAIN_CREATE_INFO_KHR;
 	createInfo.imageFormat      = surfaceFormat.format;
 	createInfo.imageColorSpace  = surfaceFormat.colorSpace;
-	createInfo.imageExtent      = extent;
+	createInfo.imageExtent      = s_Extent;
 	createInfo.imageArrayLayers = 1;
 	createInfo.imageUsage       = VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT;
 	createInfo.preTransform     = swapChainSupport.capabilities.currentTransform;
@@ -114,7 +115,7 @@ void Vulkan::SwapChain::Create() {
 	if (result != VK_SUCCESS) { throw std::runtime_error("Failed to create SwapChain"); }
 
 	ImageViews::SetSwapChainImageFormat(surfaceFormat.format);
-	ImageViews::SetSwapChainExtent(extent);
+	ImageViews::SetSwapChainExtent(s_Extent);
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
@@ -122,5 +123,9 @@ VkSwapchainKHR Vulkan::SwapChain::Get() { return s_SwapChain; }
 
 /*----------------------------------------------------------------------------------------------------------*/
 void Vulkan::SwapChain::Destroy() { vkDestroySwapchainKHR(Device::Logical::Get(), s_SwapChain, nullptr); }
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+VkExtent2D Vulkan::SwapChain::GetExtent() { return s_Extent; }
 
 /*----------------------------------------------------------------------------------------------------------*/

@@ -8,6 +8,9 @@ void Cleanup() {
 	Vulkan::Surface::Destroy();
 	Vulkan::Device::Logical::Destroy();
 	Vulkan::Instance::Destroy();
+	Vulkan::
+		GraphicsPipeline::
+			Destroy();
 }
 
 int main() {
@@ -19,6 +22,7 @@ int main() {
 	Vulkan::Device::Logical::Create();
 
 	Vulkan::SwapChain::Create();
+	Vulkan::GraphicsPipeline::Create();
 
 	Vulkan::Window::MainLoop();
 

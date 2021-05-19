@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Device/Device.cpp
-Device.hpp
-/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Device/Device.hpp
-
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Device/Device.hpp
 map
 -
@@ -46,9 +42,17 @@ vulkan/vulkan.h
 ../ValidationLayer/ValidationLayer.hpp
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ValidationLayer/ValidationLayer.hpp
 
-/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ImageView/ImageView.cpp
-ImageView.hpp
-/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ImageView/ImageView.hpp
+/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp
+GraphicsPipeline.hpp
+/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
+
+/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
+vulkan/vulkan.h
+-
+../Shader/Shader.hpp
+/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.hpp
+../SwapChain/SwapChain.hpp
+/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/SwapChain/SwapChain.hpp
 
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ImageView/ImageView.hpp
 vector
@@ -74,15 +78,23 @@ vulkan/vulkan.h
 ../Surface/Surface.hpp
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Surface/Surface.hpp
 
+/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.hpp
+iostream
+-
+fstream
+-
+vector
+-
+vulkan/vulkan.h
+-
+../Device/Device.hpp
+/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Device/Device.hpp
+
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Surface/Surface.hpp
 iostream
 -
 vulkan/vulkan.h
 -
-
-/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/SwapChain/SwapChain.cpp
-SwapChain.hpp
-/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/SwapChain/SwapChain.hpp
 
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/SwapChain/SwapChain.hpp
 vector
@@ -119,6 +131,8 @@ Device/Device.hpp
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Device/Device.hpp
 Extensions/Extensions.hpp
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Extensions/Extensions.hpp
+GraphicsPipeline/GraphicsPipeline.hpp
+/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
 ImageView/ImageView.hpp
 /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ImageView/ImageView.hpp
 Instance/Instance.hpp

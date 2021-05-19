@@ -236,7 +236,7 @@ VulkanTutorial_BINARY_DIR:STATIC=/media/osdev/Esteress/Codebase/VulkanTutorial/c
 VulkanTutorial_SOURCE_DIR:STATIC=/media/osdev/Esteress/Codebase/VulkanTutorial
 
 //Path to a program.
-Vulkan_GLSLC_EXECUTABLE:FILEPATH=Vulkan_GLSLC_EXECUTABLE-NOTFOUND
+Vulkan_GLSLC_EXECUTABLE:FILEPATH=/bin/glslc
 
 //Path to a file.
 Vulkan_INCLUDE_DIR:PATH=/usr/include

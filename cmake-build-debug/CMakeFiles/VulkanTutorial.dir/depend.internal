@@ -16,6 +16,19 @@ CMakeFiles/VulkanTutorial.dir/src/Vulkan/Extensions/Extensions.cpp.o
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Extensions/Extensions.cpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Extensions/Extensions.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ValidationLayer/ValidationLayer.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Device/Device.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Extensions/Extensions.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ImageView/ImageView.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Instance/Instance.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Queue/Queue.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Surface/Surface.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/SwapChain/SwapChain.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ValidationLayer/ValidationLayer.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Window/Window.hpp
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/ImageView/ImageView.cpp.o
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Device/Device.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Extensions/Extensions.hpp
@@ -36,6 +49,18 @@ CMakeFiles/VulkanTutorial.dir/src/Vulkan/Queue/Queue.cpp.o
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Queue/Queue.cpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Queue/Queue.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Surface/Surface.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Device/Device.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Extensions/Extensions.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ImageView/ImageView.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Instance/Instance.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Queue/Queue.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.cpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Surface/Surface.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/SwapChain/SwapChain.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ValidationLayer/ValidationLayer.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Window/Window.hpp
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/Surface/Surface.cpp.o
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Instance/Instance.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Surface/Surface.cpp
@@ -61,9 +86,11 @@ CMakeFiles/VulkanTutorial.dir/src/Vulkan/Window/Window.cpp.o
 CMakeFiles/VulkanTutorial.dir/src/main.cpp.o
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Device/Device.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Extensions/Extensions.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ImageView/ImageView.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Instance/Instance.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Queue/Queue.hpp
+ /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Surface/Surface.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/SwapChain/SwapChain.hpp
  /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ValidationLayer/ValidationLayer.hpp

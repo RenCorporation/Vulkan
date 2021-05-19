@@ -29,4 +29,6 @@ namespace Vulkan::SwapChain {
 	VkSwapchainKHR Get();
 
 	void Destroy();
+
+	VkExtent2D GetExtent();
 }

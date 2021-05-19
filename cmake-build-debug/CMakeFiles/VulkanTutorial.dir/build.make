@@ -206,6 +206,32 @@ CMakeFiles/VulkanTutorial.dir/src/Vulkan/ImageView/ImageView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VulkanTutorial.dir/src/Vulkan/ImageView/ImageView.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ImageView/ImageView.cpp -o CMakeFiles/VulkanTutorial.dir/src/Vulkan/ImageView/ImageView.cpp.s
 
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: CMakeFiles/VulkanTutorial.dir/flags.make
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/osdev/Esteress/Codebase/VulkanTutorial/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp
+
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp > CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.i
+
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp -o CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.s
+
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: CMakeFiles/VulkanTutorial.dir/flags.make
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/Shader/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/osdev/Esteress/Codebase/VulkanTutorial/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.cpp
+
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.cpp > CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.i
+
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.cpp -o CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.s
+
 # Object files for target VulkanTutorial
 VulkanTutorial_OBJECTS = \
 "CMakeFiles/VulkanTutorial.dir/src/main.cpp.o" \
@@ -217,7 +243,9 @@ VulkanTutorial_OBJECTS = \
 "CMakeFiles/VulkanTutorial.dir/src/Vulkan/Device/Device.cpp.o" \
 "CMakeFiles/VulkanTutorial.dir/src/Vulkan/Queue/Queue.cpp.o" \
 "CMakeFiles/VulkanTutorial.dir/src/Vulkan/SwapChain/SwapChain.cpp.o" \
-"CMakeFiles/VulkanTutorial.dir/src/Vulkan/ImageView/ImageView.cpp.o"
+"CMakeFiles/VulkanTutorial.dir/src/Vulkan/ImageView/ImageView.cpp.o" \
+"CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o" \
+"CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o"
 
 # External object files for target VulkanTutorial
 VulkanTutorial_EXTERNAL_OBJECTS =
@@ -232,10 +260,12 @@ VulkanTutorial: CMakeFiles/VulkanTutorial.dir/src/Vulkan/Device/Device.cpp.o
 VulkanTutorial: CMakeFiles/VulkanTutorial.dir/src/Vulkan/Queue/Queue.cpp.o
 VulkanTutorial: CMakeFiles/VulkanTutorial.dir/src/Vulkan/SwapChain/SwapChain.cpp.o
 VulkanTutorial: CMakeFiles/VulkanTutorial.dir/src/Vulkan/ImageView/ImageView.cpp.o
+VulkanTutorial: CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o
+VulkanTutorial: CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o
 VulkanTutorial: CMakeFiles/VulkanTutorial.dir/build.make
 VulkanTutorial: /usr/lib/x86_64-linux-gnu/libvulkan.so
 VulkanTutorial: CMakeFiles/VulkanTutorial.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/osdev/Esteress/Codebase/VulkanTutorial/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable VulkanTutorial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/osdev/Esteress/Codebase/VulkanTutorial/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable VulkanTutorial"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VulkanTutorial.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

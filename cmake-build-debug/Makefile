@@ -196,6 +196,33 @@ src/Vulkan/Extensions/Extensions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanTutorial.dir/build.make CMakeFiles/VulkanTutorial.dir/src/Vulkan/Extensions/Extensions.cpp.s
 .PHONY : src/Vulkan/Extensions/Extensions.cpp.s
 
+src/Vulkan/GraphicsPipeline/GraphicsPipeline.o: src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o
+
+.PHONY : src/Vulkan/GraphicsPipeline/GraphicsPipeline.o
+
+# target to build an object file
+src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanTutorial.dir/build.make CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o
+.PHONY : src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o
+
+src/Vulkan/GraphicsPipeline/GraphicsPipeline.i: src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.i
+
+.PHONY : src/Vulkan/GraphicsPipeline/GraphicsPipeline.i
+
+# target to preprocess a source file
+src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanTutorial.dir/build.make CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.i
+.PHONY : src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.i
+
+src/Vulkan/GraphicsPipeline/GraphicsPipeline.s: src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.s
+
+.PHONY : src/Vulkan/GraphicsPipeline/GraphicsPipeline.s
+
+# target to generate assembly for a file
+src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanTutorial.dir/build.make CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.s
+.PHONY : src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.s
+
 src/Vulkan/ImageView/ImageView.o: src/Vulkan/ImageView/ImageView.cpp.o
 
 .PHONY : src/Vulkan/ImageView/ImageView.o
@@ -276,6 +303,33 @@ src/Vulkan/Queue/Queue.s: src/Vulkan/Queue/Queue.cpp.s
 src/Vulkan/Queue/Queue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanTutorial.dir/build.make CMakeFiles/VulkanTutorial.dir/src/Vulkan/Queue/Queue.cpp.s
 .PHONY : src/Vulkan/Queue/Queue.cpp.s
+
+src/Vulkan/Shader/Shader.o: src/Vulkan/Shader/Shader.cpp.o
+
+.PHONY : src/Vulkan/Shader/Shader.o
+
+# target to build an object file
+src/Vulkan/Shader/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanTutorial.dir/build.make CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o
+.PHONY : src/Vulkan/Shader/Shader.cpp.o
+
+src/Vulkan/Shader/Shader.i: src/Vulkan/Shader/Shader.cpp.i
+
+.PHONY : src/Vulkan/Shader/Shader.i
+
+# target to preprocess a source file
+src/Vulkan/Shader/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanTutorial.dir/build.make CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.i
+.PHONY : src/Vulkan/Shader/Shader.cpp.i
+
+src/Vulkan/Shader/Shader.s: src/Vulkan/Shader/Shader.cpp.s
+
+.PHONY : src/Vulkan/Shader/Shader.s
+
+# target to generate assembly for a file
+src/Vulkan/Shader/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VulkanTutorial.dir/build.make CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.s
+.PHONY : src/Vulkan/Shader/Shader.cpp.s
 
 src/Vulkan/Surface/Surface.o: src/Vulkan/Surface/Surface.cpp.o
 
@@ -427,6 +481,9 @@ help:
 	@echo "... src/Vulkan/Extensions/Extensions.o"
 	@echo "... src/Vulkan/Extensions/Extensions.i"
 	@echo "... src/Vulkan/Extensions/Extensions.s"
+	@echo "... src/Vulkan/GraphicsPipeline/GraphicsPipeline.o"
+	@echo "... src/Vulkan/GraphicsPipeline/GraphicsPipeline.i"
+	@echo "... src/Vulkan/GraphicsPipeline/GraphicsPipeline.s"
 	@echo "... src/Vulkan/ImageView/ImageView.o"
 	@echo "... src/Vulkan/ImageView/ImageView.i"
 	@echo "... src/Vulkan/ImageView/ImageView.s"
@@ -436,6 +493,9 @@ help:
 	@echo "... src/Vulkan/Queue/Queue.o"
 	@echo "... src/Vulkan/Queue/Queue.i"
 	@echo "... src/Vulkan/Queue/Queue.s"
+	@echo "... src/Vulkan/Shader/Shader.o"
+	@echo "... src/Vulkan/Shader/Shader.i"
+	@echo "... src/Vulkan/Shader/Shader.s"
 	@echo "... src/Vulkan/Surface/Surface.o"
 	@echo "... src/Vulkan/Surface/Surface.i"
 	@echo "... src/Vulkan/Surface/Surface.s"

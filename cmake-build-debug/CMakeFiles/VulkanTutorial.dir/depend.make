@@ -16,6 +16,19 @@ CMakeFiles/VulkanTutorial.dir/src/Vulkan/Extensions/Extensions.cpp.o: ../src/Vul
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/Extensions/Extensions.cpp.o: ../src/Vulkan/Extensions/Extensions.hpp
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/Extensions/Extensions.cpp.o: ../src/Vulkan/ValidationLayer/ValidationLayer.hpp
 
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/Device/Device.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/Extensions/Extensions.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/ImageView/ImageView.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/Instance/Instance.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/Queue/Queue.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/Shader/Shader.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/Surface/Surface.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/SwapChain/SwapChain.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/ValidationLayer/ValidationLayer.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o: ../src/Vulkan/Window/Window.hpp
+
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/ImageView/ImageView.cpp.o: ../src/Vulkan/Device/Device.hpp
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/ImageView/ImageView.cpp.o: ../src/Vulkan/Extensions/Extensions.hpp
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/ImageView/ImageView.cpp.o: ../src/Vulkan/ImageView/ImageView.cpp
@@ -35,6 +48,18 @@ CMakeFiles/VulkanTutorial.dir/src/Vulkan/Instance/Instance.cpp.o: ../src/Vulkan/
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/Queue/Queue.cpp.o: ../src/Vulkan/Queue/Queue.cpp
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/Queue/Queue.cpp.o: ../src/Vulkan/Queue/Queue.hpp
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/Queue/Queue.cpp.o: ../src/Vulkan/Surface/Surface.hpp
+
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/Device/Device.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/Extensions/Extensions.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/ImageView/ImageView.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/Instance/Instance.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/Queue/Queue.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/Shader/Shader.cpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/Shader/Shader.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/Surface/Surface.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/SwapChain/SwapChain.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/ValidationLayer/ValidationLayer.hpp
+CMakeFiles/VulkanTutorial.dir/src/Vulkan/Shader/Shader.cpp.o: ../src/Vulkan/Window/Window.hpp
 
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/Surface/Surface.cpp.o: ../src/Vulkan/Instance/Instance.hpp
 CMakeFiles/VulkanTutorial.dir/src/Vulkan/Surface/Surface.cpp.o: ../src/Vulkan/Surface/Surface.cpp
@@ -60,9 +85,11 @@ CMakeFiles/VulkanTutorial.dir/src/Vulkan/Window/Window.cpp.o: ../src/Vulkan/Wind
 
 CMakeFiles/VulkanTutorial.dir/src/main.cpp.o: ../src/Vulkan/Device/Device.hpp
 CMakeFiles/VulkanTutorial.dir/src/main.cpp.o: ../src/Vulkan/Extensions/Extensions.hpp
+CMakeFiles/VulkanTutorial.dir/src/main.cpp.o: ../src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
 CMakeFiles/VulkanTutorial.dir/src/main.cpp.o: ../src/Vulkan/ImageView/ImageView.hpp
 CMakeFiles/VulkanTutorial.dir/src/main.cpp.o: ../src/Vulkan/Instance/Instance.hpp
 CMakeFiles/VulkanTutorial.dir/src/main.cpp.o: ../src/Vulkan/Queue/Queue.hpp
+CMakeFiles/VulkanTutorial.dir/src/main.cpp.o: ../src/Vulkan/Shader/Shader.hpp
 CMakeFiles/VulkanTutorial.dir/src/main.cpp.o: ../src/Vulkan/Surface/Surface.hpp
 CMakeFiles/VulkanTutorial.dir/src/main.cpp.o: ../src/Vulkan/SwapChain/SwapChain.hpp
 CMakeFiles/VulkanTutorial.dir/src/main.cpp.o: ../src/Vulkan/ValidationLayer/ValidationLayer.hpp

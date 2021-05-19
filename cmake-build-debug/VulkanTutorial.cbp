@@ -94,6 +94,12 @@
 		<Unit filename="/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Extensions/Extensions.hpp">
 			<Option target="VulkanTutorial"/>
 		</Unit>
+		<Unit filename="/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp">
+			<Option target="VulkanTutorial"/>
+		</Unit>
+		<Unit filename="/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp">
+			<Option target="VulkanTutorial"/>
+		</Unit>
 		<Unit filename="/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/ImageView/ImageView.cpp">
 			<Option target="VulkanTutorial"/>
 		</Unit>
@@ -110,6 +116,12 @@
 			<Option target="VulkanTutorial"/>
 		</Unit>
 		<Unit filename="/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Queue/Queue.hpp">
+			<Option target="VulkanTutorial"/>
+		</Unit>
+		<Unit filename="/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.cpp">
+			<Option target="VulkanTutorial"/>
+		</Unit>
+		<Unit filename="/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Shader/Shader.hpp">
 			<Option target="VulkanTutorial"/>
 		</Unit>
 		<Unit filename="/media/osdev/Esteress/Codebase/VulkanTutorial/src/Vulkan/Surface/Surface.cpp">
