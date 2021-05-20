@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 project(VulkanTutorial)
 set(CMAKE_CXX_STANDARD 20)
-set( "-lGL -lGLU -lglfw3 -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor")
 
 find_package(Vulkan REQUIRED)
 link_libraries(${Vulkan_LIBRARIES})
