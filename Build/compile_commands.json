@@ -1,0 +1,73 @@
+[
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/main.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/main.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/main.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Window/Window.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Window/Window.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Window/Window.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Instance/Instance.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Instance/Instance.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Instance/Instance.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ValidationLayer/ValidationLayer.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/ValidationLayer/ValidationLayer.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/ValidationLayer/ValidationLayer.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Extensions/Extensions.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Extensions/Extensions.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Extensions/Extensions.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Surface/Surface.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Surface/Surface.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Surface/Surface.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Device/Device.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Device/Device.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Device/Device.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Queue/Queue.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Queue/Queue.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Queue/Queue.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/SwapChain/SwapChain.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/SwapChain/SwapChain.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/SwapChain/SwapChain.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ImageView/ImageView.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/ImageView/ImageView.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/ImageView/ImageView.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Shader/Shader.cpp.o -c /media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Shader/Shader.cpp",
+  "file": "/media/osdev/Esteress/Codebase/VulkanTutorial/Source/Vulkan/Shader/Shader.cpp"
+}
+]

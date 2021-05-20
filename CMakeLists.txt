@@ -1,15 +1,30 @@
-cmake_minimum_required(VERSION 3.19)
+cmake_minimum_required(VERSION 3.16)
 project(VulkanTutorial)
+set(CMAKE_CXX_STANDARD 20)
+set( "-lGL -lGLU -lglfw3 -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor")
 
 find_package(Vulkan REQUIRED)
 link_libraries(${Vulkan_LIBRARIES})
 
-find_package(glfw3 REQUIRED)
+find_package(PkgConfig REQUIRED)
+pkg_search_module(GLFW REQUIRED glfw3)
 include_directories(${GLFW_INCLUDE_DIRS})
 link_libraries(${GLFW_STATIC_LIBRARIES})
 
 find_package(glm REQUIRED)
+message(${CMAKE_SOURCE_DIR})
 
-set(CMAKE_CXX_STANDARD 20)
-
-add_executable(VulkanTutorial src/main.cpp src/Vulkan/Window/Window.cpp src/Vulkan/Window/Window.hpp src/Vulkan/Instance/Instance.cpp src/Vulkan/Instance/Instance.hpp src/Vulkan/ValidationLayer/ValidationLayer.cpp src/Vulkan/ValidationLayer/ValidationLayer.hpp src/Vulkan/Extensions/Extensions.cpp src/Vulkan/Extensions/Extensions.hpp src/Vulkan/Surface/Surface.cpp src/Vulkan/Surface/Surface.hpp src/Vulkan/Device/Device.cpp src/Vulkan/Device/Device.hpp src/Vulkan/Queue/Queue.cpp src/Vulkan/Queue/Queue.hpp src/Vulkan/Vulkan.h src/Vulkan/SwapChain/SwapChain.cpp src/Vulkan/SwapChain/SwapChain.hpp src/Vulkan/ImageView/ImageView.cpp src/Vulkan/ImageView/ImageView.hpp src/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp src/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp src/Vulkan/Shader/Shader.cpp src/Vulkan/Shader/Shader.hpp)
+add_executable(VulkanTutorial Source/main.cpp
+                              Source/Vulkan/Vulkan.h
+                              Source/Vulkan/Window/Window.cpp Source/Vulkan/Window/Window.hpp
+                              Source/Vulkan/Instance/Instance.cpp Source/Vulkan/Instance/Instance.hpp
+                              Source/Vulkan/ValidationLayer/ValidationLayer.cpp Source/Vulkan/ValidationLayer/ValidationLayer.hpp
+                              Source/Vulkan/Extensions/Extensions.cpp Source/Vulkan/Extensions/Extensions.hpp
+                              Source/Vulkan/Surface/Surface.cpp Source/Vulkan/Surface/Surface.hpp
+                              Source/Vulkan/Device/Device.cpp Source/Vulkan/Device/Device.hpp
+                              Source/Vulkan/Queue/Queue.cpp Source/Vulkan/Queue/Queue.hpp
+                              Source/Vulkan/SwapChain/SwapChain.cpp Source/Vulkan/SwapChain/SwapChain.hpp
+                              Source/Vulkan/ImageView/ImageView.cpp Source/Vulkan/ImageView/ImageView.hpp
+                              Source/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp Source/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
+                              Source/Vulkan/Shader/Shader.cpp Source/Vulkan/Shader/Shader.hpp
+)

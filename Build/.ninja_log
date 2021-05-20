@@ -1,0 +1,16 @@
+# ninja log v5
+0	829	1621502457285099800	CMakeFiles/VulkanTutorial.dir/Source/main.cpp.o	54b9ce9758dba26f
+3	189	1621502768850234400	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Window/Window.cpp.o	46f562e494e334c6
+5	727	1621502769387398000	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Surface/Surface.cpp.o	950cbbc11d63686d
+4	1256	1621502769917000400	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Instance/Instance.cpp.o	1265e931c42b079c
+4	1295	1621502769955410700	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ValidationLayer/ValidationLayer.cpp.o	6b7c997a776416c9
+191	1468	1621502770129233200	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Queue/Queue.cpp.o	5287f3f623074ab9
+4	1701	1621502770361357700	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Extensions/Extensions.cpp.o	9a7ed8e35b126fcf
+5	1815	1621502770475122400	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Device/Device.cpp.o	61ee2915199ba9fd
+729	2207	1621502770868012800	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/SwapChain/SwapChain.cpp.o	ac6de22fbbdffc37
+1256	2495	1621502771155621800	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ImageView/ImageView.cpp.o	90e2d9ce7d228508
+1297	2499	1621502771159190900	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o	cfb941f37e44907b
+1469	2609	1621502771269692400	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Shader/Shader.cpp.o	291ed134d238f2ec
+5	275	1621503917342725000	VulkanTutorial	c8f2c93c28caa700
+3	1115	1621504210887322400	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o	cfb941f37e44907b
+1115	1420	1621504211191638100	VulkanTutorial	c8f2c93c28caa700
