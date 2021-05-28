@@ -1,8 +1,8 @@
 #pragma once
 
 #include <vulkan/vulkan.h>
-#include ".Shader/Shader.hpp"
-#include ".SwapChain/SwapChain.hpp"
+#include "../Shader/Shader.hpp"
+#include "../SwapChain/SwapChain.hpp"
 
 namespace Vulkan::GraphicsPipeline
 {

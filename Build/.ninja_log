@@ -12,3 +12,16 @@
 1496	3171	1621936234997742400	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ImageView/ImageView.cpp.o	90e2d9ce7d228508
 1346	3270	1621936235096756400	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/SwapChain/SwapChain.cpp.o	ac6de22fbbdffc37
 3272	3580	1621936235404648500	VulkanTutorial	c8f2c93c28caa700
+5	175	1622203891917137400	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Window/Window.cpp.o	46f562e494e334c6
+6	657	1622203892398887500	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ValidationLayer/ValidationLayer.cpp.o	6b7c997a776416c9
+8	1113	1622203939118644600	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Queue/Queue.cpp.o	5287f3f623074ab9
+5	1195	1622203939200482500	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Surface/Surface.cpp.o	950cbbc11d63686d
+4	1216	1622203939221778300	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Instance/Instance.cpp.o	1265e931c42b079c
+4	1547	1622203939552602000	CMakeFiles/VulkanTutorial.dir/Source/main.cpp.o	54b9ce9758dba26f
+4	1801	1622203939780627900	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Extensions/Extensions.cpp.o	9a7ed8e35b126fcf
+5	2225	1622203940152725300	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Device/Device.cpp.o	61ee2915199ba9fd
+1113	2432	1622203940389563300	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/SwapChain/SwapChain.cpp.o	ac6de22fbbdffc37
+1216	2601	1622203940569082900	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o	cfb941f37e44907b
+1196	2723	1622203940681894700	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ImageView/ImageView.cpp.o	90e2d9ce7d228508
+1547	2898	1622203940847490400	CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Shader/Shader.cpp.o	291ed134d238f2ec
+2899	3220	1622203941223844300	VulkanTutorial	c8f2c93c28caa700

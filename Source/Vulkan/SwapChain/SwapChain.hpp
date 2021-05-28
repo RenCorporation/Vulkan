@@ -3,11 +3,11 @@
 #include <limits>
 #include <algorithm>
 #include <vulkan/vulkan.h>
-#include ".Queue/Queue.hpp"
-#include ".Window/Window.hpp"
-#include ".Device/Device.hpp"
-#include ".Surface/Surface.hpp"
-#include ".ImageView/ImageView.hpp"
+#include "../Queue/Queue.hpp"
+#include "../Window/Window.hpp"
+#include "../Device/Device.hpp"
+#include "../Surface/Surface.hpp"
+#include "../ImageView/ImageView.hpp"
 
 namespace Vulkan::SwapChain
 {

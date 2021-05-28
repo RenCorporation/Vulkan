@@ -6,10 +6,10 @@
 #include <vector>
 #include <vulkan/vulkan.h>
 
-#include ".Queue/Queue.hpp"
-#include ".Instance/Instance.hpp"
-#include ".Extensions/Extensions.hpp"
-#include ".SwapChain/SwapChain.hpp"
+#include "../Queue/Queue.hpp"
+#include "../Instance/Instance.hpp"
+#include "../Extensions/Extensions.hpp"
+#include "../SwapChain/SwapChain.hpp"
 
 namespace Vulkan::Device::Physical
 {
