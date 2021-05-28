@@ -15,7 +15,10 @@ std::vector<VkImageView> Vulkan::ImageViews::GetImageViews() { return s_SwapChai
 VkFormat Vulkan::ImageViews::GetSwapChainImageFormat() { return s_SwapChainImageFormat; }
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::ImageViews::SetSwapChainImageFormat(VkFormat format) { s_SwapChainImageFormat = format; }
+void Vulkan::ImageViews::SetSwapChainImageFormat(VkFormat format)
+{
+	s_SwapChainImageFormat = format;
+}
 
 /*----------------------------------------------------------------------------------------------------------*/
 VkExtent2D Vulkan::ImageViews::GetSwapChainExtent() { return s_SwapChainExtent; }
@@ -24,17 +27,21 @@ VkExtent2D Vulkan::ImageViews::GetSwapChainExtent() { return s_SwapChainExtent; 
 void Vulkan::ImageViews::SetSwapChainExtent(VkExtent2D extent) { s_SwapChainExtent = extent; }
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::ImageViews::Destroy() {
-	for (auto imageView : Vulkan::ImageViews::GetImageViews()) {
+void Vulkan::ImageViews::Destroy()
+{
+	for (auto imageView : Vulkan::ImageViews::GetImageViews())
+	{
 		vkDestroyImageView(Device::Logical::Get(), imageView, nullptr);
 	}
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::ImageViews::Create() {
+void Vulkan::ImageViews::Create()
+{
 	s_SwapChainImageViews.resize(s_SwapChainImages.size());
 
-	for (size_t i = 0; i < s_SwapChainImages.size(); i++) {
+	for (size_t i = 0; i < s_SwapChainImages.size(); i++)
+	{
 		VkImageViewCreateInfo createInfo {};
 		createInfo.sType                           = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO;
 		createInfo.image                           = s_SwapChainImages[i];
@@ -49,8 +56,10 @@ void Vulkan::ImageViews::Create() {
 		createInfo.subresourceRange.baseMipLevel   = 0;
 		createInfo.subresourceRange.baseArrayLayer = 0;
 
-		VkResult result =
-			vkCreateImageView(Device::Logical::Get(), &createInfo, nullptr, &s_SwapChainImageViews[i]);
+		VkResult result = vkCreateImageView(Device::Logical::Get(),
+											&createInfo,
+											nullptr,
+											&s_SwapChainImageViews[i]);
 		if (result != VK_SUCCESS) { throw std::runtime_error("Failed to create Image View"); }
 	}
 }

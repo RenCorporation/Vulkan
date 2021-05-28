@@ -1,3 +1,3 @@
-/media/osdev/Esteress/Codebase/VulkanTutorial/Build/CMakeFiles/rebuild_cache.dir
-/media/osdev/Esteress/Codebase/VulkanTutorial/Build/CMakeFiles/edit_cache.dir
-/media/osdev/Esteress/Codebase/VulkanTutorial/Build/CMakeFiles/VulkanTutorial.dir
+/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Build/CMakeFiles/rebuild_cache.dir
+/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Build/CMakeFiles/edit_cache.dir
+/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Build/CMakeFiles/VulkanTutorial.dir

@@ -4,7 +4,8 @@
 #include "../Shader/Shader.hpp"
 #include "../SwapChain/SwapChain.hpp"
 
-namespace Vulkan::GraphicsPipeline {
+namespace Vulkan::GraphicsPipeline
+{
 	void Create();
 
 	VkPipelineLayout Get();

@@ -2,7 +2,8 @@
 
 #include <vulkan/vulkan.h>
 
-namespace Vulkan::Instance {
+namespace Vulkan::Instance
+{
 	VkInstance Create();
 
 	VkInstance Get();

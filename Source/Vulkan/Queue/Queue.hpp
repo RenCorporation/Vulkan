@@ -6,8 +6,10 @@
 #include <vulkan/vulkan.h>
 #include "../Surface/Surface.hpp"
 
-namespace Vulkan::Queue {
-	struct QueueFamilyIndex {
+namespace Vulkan::Queue
+{
+	struct QueueFamilyIndex
+	{
 		std::optional<uint32_t> graphicsFamily;
 		std::optional<uint32_t> presentFamily;
 

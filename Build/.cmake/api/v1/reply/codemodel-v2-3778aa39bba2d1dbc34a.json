@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/media/osdev/Esteress/Codebase/VulkanTutorial/Build",
-		"source" : "/media/osdev/Esteress/Codebase/VulkanTutorial"
+		"build" : "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Build",
+		"source" : "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial"
 	},
 	"version" : 
 	{

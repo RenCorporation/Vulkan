@@ -4,7 +4,9 @@ VkSwapchainKHR s_SwapChain;
 VkExtent2D     s_Extent;
 
 /*----------------------------------------------------------------------------------------------------------*/
-Vulkan::SwapChain::SwapChainSupportDetails Vulkan::SwapChain::QuerySwapChainSupport(VkPhysicalDevice device) {
+Vulkan::SwapChain::SwapChainSupportDetails
+	Vulkan::SwapChain::QuerySwapChainSupport(VkPhysicalDevice device)
+{
 	const VkSurfaceKHR &surface = Surface::Get();
 
 	SwapChainSupportDetails details;
@@ -13,44 +15,57 @@ Vulkan::SwapChain::SwapChainSupportDetails Vulkan::SwapChain::QuerySwapChainSupp
 	// Formats
 	uint32_t formatsCount;
 	vkGetPhysicalDeviceSurfaceFormatsKHR(device, surface, &formatsCount, nullptr);
-	if (formatsCount != 0) {
+	if (formatsCount != 0)
+	{
 		details.formats.resize(formatsCount);
-		vkGetPhysicalDeviceSurfaceFormatsKHR(device, surface, &formatsCount, details.formats.data());
+		vkGetPhysicalDeviceSurfaceFormatsKHR(device,
+											 surface,
+											 &formatsCount,
+											 details.formats.data());
 	}
 
 	// Present Mode
 	uint32_t presentModeCount;
 	vkGetPhysicalDeviceSurfacePresentModesKHR(device, surface, &presentModeCount, nullptr);
-	if (presentModeCount != 0) {
+	if (presentModeCount != 0)
+	{
 		details.presentModes.resize(presentModeCount);
-		vkGetPhysicalDeviceSurfacePresentModesKHR(
-			device, surface, &presentModeCount, details.presentModes.data());
+		vkGetPhysicalDeviceSurfacePresentModesKHR(device,
+												  surface,
+												  &presentModeCount,
+												  details.presentModes.data());
 	}
 
 	return details;
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
-VkSurfaceFormatKHR Vulkan::SwapChain::ChooseSwapSurfaceFormat(std::vector<VkSurfaceFormatKHR> formats) {
-	for (const auto &format : formats) {
+VkSurfaceFormatKHR
+	Vulkan::SwapChain::ChooseSwapSurfaceFormat(std::vector<VkSurfaceFormatKHR> formats)
+{
+	for (const auto &format : formats)
+	{
 		if (format.format == VK_FORMAT_B8G8R8A8_SRGB
-			&& format.colorSpace == VK_COLORSPACE_SRGB_NONLINEAR_KHR) {
-			return format;
-		}
+			&& format.colorSpace == VK_COLORSPACE_SRGB_NONLINEAR_KHR)
+		{ return format; }
 	}
 	return formats[0];
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
-VkPresentModeKHR Vulkan::SwapChain::ChooseSwapPresentMode(std::vector<VkPresentModeKHR> presentModes) {
-	for (const auto &presentMode : presentModes) {
+VkPresentModeKHR
+	Vulkan::SwapChain::ChooseSwapPresentMode(std::vector<VkPresentModeKHR> presentModes)
+{
+	for (const auto &presentMode : presentModes)
+	{
 		if (presentMode == VK_PRESENT_MODE_MAILBOX_KHR) return VK_PRESENT_MODE_MAILBOX_KHR;
 	}
 	return VK_PRESENT_MODE_FIFO_KHR;
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
-VkExtent2D Vulkan::SwapChain::ChooseSwapExtent(VkSurfaceCapabilitiesKHR capabilities) {
+VkExtent2D Vulkan::SwapChain::ChooseSwapExtent(VkSurfaceCapabilitiesKHR capabilities)
+{
 	if (capabilities.currentExtent.width != UINT32_MAX) return capabilities.currentExtent;
 
 	int width;
@@ -62,16 +77,18 @@ VkExtent2D Vulkan::SwapChain::ChooseSwapExtent(VkSurfaceCapabilitiesKHR capabili
 		static_cast<uint32_t>(height),
 	};
 
-	actualExtent.width  = std::max(capabilities.minImageExtent.width,
-                                  std::min(capabilities.maxImageExtent.width, actualExtent.width));
-	actualExtent.height = std::max(capabilities.minImageExtent.height,
-								   std::min(capabilities.maxImageExtent.height, actualExtent.height));
+	actualExtent.width = std::max(capabilities.minImageExtent.width,
+								  std::min(capabilities.maxImageExtent.width, actualExtent.width));
+	actualExtent.height =
+		std::max(capabilities.minImageExtent.height,
+				 std::min(capabilities.maxImageExtent.height, actualExtent.height));
 
 	return actualExtent;
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::SwapChain::Create() {
+void Vulkan::SwapChain::Create()
+{
 	SwapChainSupportDetails swapChainSupport = QuerySwapChainSupport(Device::Physical::Get());
 
 	VkSurfaceFormatKHR surfaceFormat = ChooseSwapSurfaceFormat(swapChainSupport.formats);
@@ -80,9 +97,8 @@ void Vulkan::SwapChain::Create() {
 
 	uint32_t imageCount = swapChainSupport.capabilities.minImageCount + 1;
 	if (swapChainSupport.capabilities.maxImageCount
-		&& imageCount > swapChainSupport.capabilities.maxImageCount) {
-		imageCount = swapChainSupport.capabilities.maxImageCount;
-	}
+		&& imageCount > swapChainSupport.capabilities.maxImageCount)
+	{ imageCount = swapChainSupport.capabilities.maxImageCount; }
 
 	VkSwapchainCreateInfoKHR createInfo {};
 	createInfo.minImageCount    = imageCount;
@@ -100,18 +116,23 @@ void Vulkan::SwapChain::Create() {
 	createInfo.surface          = Surface::Get();
 
 	Queue::QueueFamilyIndex indices = Queue::FindQueueFamilies(Device::Physical::Get());
-	uint32_t queueFamilyIndices[]   = { indices.graphicsFamily.value(), indices.presentFamily.value() };
-	if (indices.graphicsFamily != indices.presentFamily) {
+	uint32_t                queueFamilyIndices[] = { indices.graphicsFamily.value(),
+                                      indices.presentFamily.value() };
+	if (indices.graphicsFamily != indices.presentFamily)
+	{
 		createInfo.imageSharingMode      = VK_SHARING_MODE_CONCURRENT;
 		createInfo.queueFamilyIndexCount = 2;
 		createInfo.pQueueFamilyIndices   = queueFamilyIndices;
-	} else {
+	}
+	else
+	{
 		createInfo.imageSharingMode      = VK_SHARING_MODE_EXCLUSIVE;
 		createInfo.queueFamilyIndexCount = 0;
 		createInfo.pQueueFamilyIndices   = nullptr;
 	}
 
-	VkResult result = vkCreateSwapchainKHR(Device::Logical::Get(), &createInfo, nullptr, &s_SwapChain);
+	VkResult result =
+		vkCreateSwapchainKHR(Device::Logical::Get(), &createInfo, nullptr, &s_SwapChain);
 	if (result != VK_SUCCESS) { throw std::runtime_error("Failed to create SwapChain"); }
 
 	ImageViews::SetSwapChainImageFormat(surfaceFormat.format);
@@ -122,7 +143,10 @@ void Vulkan::SwapChain::Create() {
 VkSwapchainKHR Vulkan::SwapChain::Get() { return s_SwapChain; }
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::SwapChain::Destroy() { vkDestroySwapchainKHR(Device::Logical::Get(), s_SwapChain, nullptr); }
+void Vulkan::SwapChain::Destroy()
+{
+	vkDestroySwapchainKHR(Device::Logical::Get(), s_SwapChain, nullptr);
+}
 
 /*----------------------------------------------------------------------------------------------------------*/
 

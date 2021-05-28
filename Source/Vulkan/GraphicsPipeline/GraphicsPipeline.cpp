@@ -6,12 +6,14 @@ VkPipelineLayout s_PipelineLayout;
 VkPipelineLayout Vulkan::GraphicsPipeline::Get() { return s_PipelineLayout; }
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::GraphicsPipeline::Destroy() {
+void Vulkan::GraphicsPipeline::Destroy()
+{
 	vkDestroyPipelineLayout(Device::Logical::Get(), s_PipelineLayout, nullptr);
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::GraphicsPipeline::Create() {
+void Vulkan::GraphicsPipeline::Create()
+{
 	auto vertShaderSource = Vulkan::Shader::ReadFile("../Assets/Shaders/vert.spv");
 	auto fragShaderSource = Vulkan::Shader::ReadFile("../Assets/Shaders/frag.spv");
 
@@ -42,8 +44,9 @@ void Vulkan::GraphicsPipeline::Create() {
 	vertexInputStateCreateInfo.vertexAttributeDescriptionCount = 0;
 
 	VkPipelineInputAssemblyStateCreateInfo inputAssemblyStateCreateInfo {};
-	inputAssemblyStateCreateInfo.sType    = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO;
-	inputAssemblyStateCreateInfo.topology = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP;
+	inputAssemblyStateCreateInfo.sType =
+		VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO;
+	inputAssemblyStateCreateInfo.topology               = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP;
 	inputAssemblyStateCreateInfo.primitiveRestartEnable = VK_FALSE;
 
 	VkViewport viewport {};
@@ -78,8 +81,8 @@ void Vulkan::GraphicsPipeline::Create() {
 	rasterizationStateCreateInfo.depthBiasSlopeFactor    = 0.0f;
 
 	VkPipelineMultisampleStateCreateInfo multisampleStateCreateInfo {};
-	multisampleStateCreateInfo.sType               = VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO;
-	multisampleStateCreateInfo.sampleShadingEnable = VK_TRUE;
+	multisampleStateCreateInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO;
+	multisampleStateCreateInfo.sampleShadingEnable   = VK_TRUE;
 	multisampleStateCreateInfo.rasterizationSamples  = VK_SAMPLE_COUNT_1_BIT;
 	multisampleStateCreateInfo.minSampleShading      = 1.0f;
 	multisampleStateCreateInfo.pSampleMask           = nullptr;
@@ -88,7 +91,8 @@ void Vulkan::GraphicsPipeline::Create() {
 
 	VkPipelineColorBlendAttachmentState colorBlendAttachmentState {};
 	colorBlendAttachmentState.colorWriteMask = VK_COLOR_COMPONENT_R_BIT | VK_COLOR_COMPONENT_G_BIT
-											   | VK_COLOR_COMPONENT_B_BIT | VK_COLOR_COMPONENT_A_BIT;
+											   | VK_COLOR_COMPONENT_B_BIT
+											   | VK_COLOR_COMPONENT_A_BIT;
 	colorBlendAttachmentState.blendEnable         = VK_FALSE;
 	colorBlendAttachmentState.srcColorBlendFactor = VK_BLEND_FACTOR_ONE;
 	colorBlendAttachmentState.dstColorBlendFactor = VK_BLEND_FACTOR_ZERO;
@@ -114,8 +118,10 @@ void Vulkan::GraphicsPipeline::Create() {
 	pipelineLayoutCreateInfo.pushConstantRangeCount = 0;
 	pipelineLayoutCreateInfo.pPushConstantRanges    = nullptr;
 
-	VkResult result =
-		vkCreatePipelineLayout(Device::Logical::Get(), &pipelineLayoutCreateInfo, nullptr, &s_PipelineLayout);
+	VkResult result = vkCreatePipelineLayout(Device::Logical::Get(),
+											 &pipelineLayoutCreateInfo,
+											 nullptr,
+											 &s_PipelineLayout);
 	if (result != VK_SUCCESS) { throw std::runtime_error("Failed to create the pipeline layout"); }
 }
 

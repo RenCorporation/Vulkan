@@ -6,8 +6,9 @@
 #include <vulkan/vulkan.h>
 #include "../Device/Device.hpp"
 
-namespace Vulkan::Shader {
+namespace Vulkan::Shader
+{
 	std::vector<char> ReadFile(const std::string &fileName);
 
-	VkShaderModule CreateShader(const std::vector<char>& code);
+	VkShaderModule CreateShader(const std::vector<char> &code);
 }

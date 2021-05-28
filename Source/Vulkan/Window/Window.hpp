@@ -2,7 +2,8 @@
 
 #include <GLFW/glfw3.h>
 
-namespace Vulkan::Window {
+namespace Vulkan::Window
+{
 	GLFWwindow *Create();
 
 	void Destroy();

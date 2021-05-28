@@ -1,6 +1,7 @@
 #include "Shader.hpp"
 
-std::vector<char> Vulkan::Shader::ReadFile(const std::string &fileName) {
+std::vector<char> Vulkan::Shader::ReadFile(const std::string &fileName)
+{
 	std::ifstream file(fileName, std::ios::ate | std::ios::binary);
 	if (!file.is_open()) throw std::runtime_error("Unable to open shader" + fileName);
 
@@ -14,15 +15,18 @@ std::vector<char> Vulkan::Shader::ReadFile(const std::string &fileName) {
 	return buffer;
 }
 
-VkShaderModule Vulkan::Shader::CreateShader(const std::vector<char> &code) {
+VkShaderModule Vulkan::Shader::CreateShader(const std::vector<char> &code)
+{
 	VkShaderModuleCreateInfo shaderModuleCreateInfo {};
 	shaderModuleCreateInfo.sType    = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO;
 	shaderModuleCreateInfo.codeSize = code.size();
 	shaderModuleCreateInfo.pCode    = reinterpret_cast<const uint32_t *>(code.data());
 
 	VkShaderModule shaderModule;
-	VkResult       result =
-		vkCreateShaderModule(Vulkan::Device::Logical::Get(), &shaderModuleCreateInfo, nullptr, &shaderModule);
+	VkResult       result = vkCreateShaderModule(Vulkan::Device::Logical::Get(),
+                                           &shaderModuleCreateInfo,
+                                           nullptr,
+                                           &shaderModule);
 	if (result != VK_SUCCESS) { throw std::runtime_error("Failed to Create Shader Module"); }
 
 	return shaderModule;

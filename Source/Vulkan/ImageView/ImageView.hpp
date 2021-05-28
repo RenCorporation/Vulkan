@@ -5,7 +5,8 @@
 
 #include "../Device/Device.hpp"
 
-namespace Vulkan::ImageViews {
+namespace Vulkan::ImageViews
+{
 	std::vector<VkImage> GetImages();
 
 	std::vector<VkImageView> GetImageViews();

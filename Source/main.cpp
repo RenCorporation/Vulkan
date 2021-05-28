@@ -1,8 +1,10 @@
 #include "Vulkan/Vulkan.h"
 
-void Cleanup() {
+void Cleanup()
+{
 	Vulkan::Window::Destroy();
-	// All child objects created using instance must have been destroyed prior to destroying instance
+	// All child objects created using instance must have been destroyed prior to destroying
+	// instance
 	Vulkan::GraphicsPipeline::Destroy();
 	Vulkan::ImageViews::Destroy();
 	Vulkan::SwapChain::Destroy();
@@ -11,7 +13,8 @@ void Cleanup() {
 	Vulkan::Instance::Destroy();
 }
 
-int main() {
+int main()
+{
 	Vulkan::Window::Create();
 	Vulkan::Instance::Create();
 	Vulkan::Surface::Create();

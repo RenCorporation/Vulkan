@@ -9,8 +9,10 @@
 #include "../Surface/Surface.hpp"
 #include "../ImageView/ImageView.hpp"
 
-namespace Vulkan::SwapChain {
-	struct SwapChainSupportDetails {
+namespace Vulkan::SwapChain
+{
+	struct SwapChainSupportDetails
+	{
 		VkSurfaceCapabilitiesKHR        capabilities;
 		std::vector<VkSurfaceFormatKHR> formats;
 		std::vector<VkPresentModeKHR>   presentModes;

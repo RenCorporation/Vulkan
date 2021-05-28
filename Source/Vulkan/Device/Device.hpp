@@ -11,7 +11,8 @@
 #include "../Extensions/Extensions.hpp"
 #include "../SwapChain/SwapChain.hpp"
 
-namespace Vulkan::Device::Physical {
+namespace Vulkan::Device::Physical
+{
 	int RateDeviceSuitability(const VkPhysicalDevice &device);
 
 	VkPhysicalDevice Pick();
@@ -19,7 +20,8 @@ namespace Vulkan::Device::Physical {
 	VkPhysicalDevice Get();
 }
 
-namespace Vulkan::Device::Logical {
+namespace Vulkan::Device::Logical
+{
 	VkDevice Create();
 
 	void Destroy();

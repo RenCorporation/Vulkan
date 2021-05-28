@@ -4,7 +4,8 @@
 #include <cstring>
 #include <vulkan/vulkan.h>
 
-namespace Vulkan::ValidationLayer {
+namespace Vulkan::ValidationLayer
+{
 	bool CheckSupport();
 
 	std::vector<const char *> GetLayerNames();

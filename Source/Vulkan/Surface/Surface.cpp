@@ -5,7 +5,8 @@
 VkSurfaceKHR s_Surface;
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::Surface::Create() {
+void Vulkan::Surface::Create()
+{
 	VkResult result = glfwCreateWindowSurface(Instance::Get(), Window::Get(), nullptr, &s_Surface);
 	if (result != VK_SUCCESS) throw std::runtime_error("Failed to create window surface");
 }
@@ -14,7 +15,8 @@ void Vulkan::Surface::Create() {
 VkSurfaceKHR Vulkan::Surface::Get() { return s_Surface; }
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::Surface::Destroy() {
+void Vulkan::Surface::Destroy()
+{
 	vkDestroySurfaceKHR(Vulkan::Instance::Get(), Vulkan::Surface::Get(), nullptr);
 }
 

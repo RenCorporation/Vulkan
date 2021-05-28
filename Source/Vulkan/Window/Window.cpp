@@ -3,7 +3,8 @@
 GLFWwindow *s_Window = nullptr;
 
 /*----------------------------------------------------------------------------------------------------------*/
-GLFWwindow *Vulkan::Window::Create() {
+GLFWwindow *Vulkan::Window::Create()
+{
 	glfwInit();
 	glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
 	glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
@@ -13,7 +14,8 @@ GLFWwindow *Vulkan::Window::Create() {
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::Window::Destroy() {
+void Vulkan::Window::Destroy()
+{
 	glfwDestroyWindow(s_Window);
 	glfwTerminate();
 }
@@ -22,9 +24,12 @@ void Vulkan::Window::Destroy() {
 GLFWwindow *Vulkan::Window::Get() { return s_Window; }
 
 /*----------------------------------------------------------------------------------------------------------*/
-void Vulkan::Window::MainLoop() {
-	while (!glfwWindowShouldClose(s_Window)) {
-		if (glfwGetKey(s_Window, GLFW_KEY_ESCAPE) == GLFW_PRESS) { glfwSetWindowShouldClose(s_Window, true); }
+void Vulkan::Window::MainLoop()
+{
+	while (!glfwWindowShouldClose(s_Window))
+	{
+		if (glfwGetKey(s_Window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+		{ glfwSetWindowShouldClose(s_Window, true); }
 		glfwPollEvents();
 	}
 }

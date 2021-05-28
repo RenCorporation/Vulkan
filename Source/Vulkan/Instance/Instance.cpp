@@ -4,10 +4,10 @@
 VkInstance s_Instance = nullptr;
 
 /*----------------------------------------------------------------------------------------------------------*/
-VkInstance Vulkan::Instance::Create() {
-	if (ValidationLayer::IsEnabled() && !ValidationLayer::CheckSupport()) {
-		throw std::runtime_error("Desired validation layer not found");
-	}
+VkInstance Vulkan::Instance::Create()
+{
+	if (ValidationLayer::IsEnabled() && !ValidationLayer::CheckSupport())
+	{ throw std::runtime_error("Desired validation layer not found"); }
 
 	auto layers     = ValidationLayer::GetLayerNames();
 	auto extensions = Extensions::GetRequiredExtensions();

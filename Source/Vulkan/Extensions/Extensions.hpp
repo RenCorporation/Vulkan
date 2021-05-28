@@ -7,7 +7,8 @@
 #include <vulkan/vulkan.h>
 #include "../ValidationLayer/ValidationLayer.hpp"
 
-namespace Vulkan::Extensions {
+namespace Vulkan::Extensions
+{
 	std::vector<const char *> GetRequiredExtensions();
 
 	std::vector<const char *> GetEnabledExtensions();

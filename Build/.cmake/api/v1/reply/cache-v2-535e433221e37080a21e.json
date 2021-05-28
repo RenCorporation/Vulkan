@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/media/osdev/Esteress/Codebase/VulkanTutorial/Build"
+			"value" : "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -579,7 +579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/media/osdev/Esteress/Codebase/VulkanTutorial"
+			"value" : "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1575,7 +1575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/media/osdev/Esteress/Codebase/VulkanTutorial/Build"
+			"value" : "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Build"
 		},
 		{
 			"name" : "Project_SOURCE_DIR",
@@ -1587,7 +1587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/media/osdev/Esteress/Codebase/VulkanTutorial"
+			"value" : "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial"
 		},
 		{
 			"name" : "VulkanTutorial_BINARY_DIR",
@@ -1599,7 +1599,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/media/osdev/Esteress/Codebase/VulkanTutorial/Build"
+			"value" : "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Build"
 		},
 		{
 			"name" : "VulkanTutorial_SOURCE_DIR",
@@ -1611,7 +1611,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/media/osdev/Esteress/Codebase/VulkanTutorial"
+			"value" : "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial"
 		},
 		{
 			"name" : "Vulkan_INCLUDE_DIR",
@@ -1656,18 +1656,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "1"
-		},
-		{
-			"name" : "glfw3_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for glfw3."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/local/lib/cmake/glfw3"
 		},
 		{
 			"name" : "glm_DIR",

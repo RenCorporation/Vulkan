@@ -4,7 +4,8 @@ VkDevice         s_Device;
 VkPhysicalDevice s_PhysicalDevice = VK_NULL_HANDLE;
 
 /*---------------------------------------------------------------------------------------------------------**/
-int Vulkan::Device::Physical::RateDeviceSuitability(const VkPhysicalDevice &device) {
+int Vulkan::Device::Physical::RateDeviceSuitability(const VkPhysicalDevice &device)
+{
 	VkPhysicalDeviceProperties deviceProperties;
 	VkPhysicalDeviceFeatures   deviceFeatures;
 	vkGetPhysicalDeviceProperties(device, &deviceProperties);
@@ -28,7 +29,8 @@ int Vulkan::Device::Physical::RateDeviceSuitability(const VkPhysicalDevice &devi
 }
 
 /*---------------------------------------------------------------------------------------------------------**/
-VkPhysicalDevice Vulkan::Device::Physical::Pick() {
+VkPhysicalDevice Vulkan::Device::Physical::Pick()
+{
 	uint32_t deviceCount = 0;
 	vkEnumeratePhysicalDevices(Instance::Get(), &deviceCount, nullptr);
 
@@ -38,7 +40,8 @@ VkPhysicalDevice Vulkan::Device::Physical::Pick() {
 	vkEnumeratePhysicalDevices(Instance::Get(), &deviceCount, physicalDevices.data());
 
 	std::multimap<int, VkPhysicalDevice> scores;
-	for (const auto &device : physicalDevices) {
+	for (const auto &device : physicalDevices)
+	{
 		int score = RateDeviceSuitability(device);
 		scores.insert(std::make_pair(score, device));
 	}
@@ -54,7 +57,8 @@ VkPhysicalDevice Vulkan::Device::Physical::Pick() {
 VkPhysicalDevice Vulkan::Device::Physical::Get() { return s_PhysicalDevice; }
 
 /*---------------------------------------------------------------------------------------------------------**/
-VkDevice Vulkan::Device::Logical::Create() {
+VkDevice Vulkan::Device::Logical::Create()
+{
 	Queue::QueueFamilyIndex              indices       = Queue::FindQueueFamilies(Physical::Get());
 	float                                queuePriority = 1.0f;
 	std::vector<VkDeviceQueueCreateInfo> queueCreateInfos;
@@ -62,7 +66,8 @@ VkDevice Vulkan::Device::Logical::Create() {
         indices.graphicsFamily.value(),
         indices.presentFamily.value(),
 	};
-	for (uint32_t queueFamily : uniqueQueueFamilies) {
+	for (uint32_t queueFamily : uniqueQueueFamilies)
+	{
 		VkDeviceQueueCreateInfo queueCreateInfo {};
 		queueCreateInfo.sType            = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO;
 		queueCreateInfo.queueFamilyIndex = indices.graphicsFamily.value();

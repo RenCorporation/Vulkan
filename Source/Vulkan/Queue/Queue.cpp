@@ -4,7 +4,8 @@ VkQueue s_PresentQueue;
 VkQueue s_GraphicsQueue;
 
 /*----------------------------------------------------------------------------------------------------------*/
-Vulkan::Queue::QueueFamilyIndex Vulkan::Queue::FindQueueFamilies(VkPhysicalDevice device) {
+Vulkan::Queue::QueueFamilyIndex Vulkan::Queue::FindQueueFamilies(VkPhysicalDevice device)
+{
 	QueueFamilyIndex indices;
 
 	uint32_t queueFamilyCount;
@@ -14,7 +15,8 @@ Vulkan::Queue::QueueFamilyIndex Vulkan::Queue::FindQueueFamilies(VkPhysicalDevic
 	vkGetPhysicalDeviceQueueFamilyProperties(device, &queueFamilyCount, queueFamily.data());
 
 	int i = 0;
-	for (const auto &queueFamily : queueFamily) {
+	for (const auto &queueFamily : queueFamily)
+	{
 		// Check for graphics queue support on the GPU.
 		if (queueFamily.queueFlags & VK_QUEUE_COMPUTE_BIT) indices.graphicsFamily = i;
 
