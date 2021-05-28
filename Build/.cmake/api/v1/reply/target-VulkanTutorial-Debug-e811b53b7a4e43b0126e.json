@@ -174,7 +174,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Source/Vulkan/Vulkan.h",
+			"path" : "Source/Vulkan/Vulkan.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{

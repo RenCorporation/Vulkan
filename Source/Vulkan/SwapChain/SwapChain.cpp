@@ -3,7 +3,7 @@
 VkSwapchainKHR s_SwapChain;
 VkExtent2D     s_Extent;
 
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 Vulkan::SwapChain::SwapChainSupportDetails
 	Vulkan::SwapChain::QuerySwapChainSupport(VkPhysicalDevice device)
 {
@@ -39,7 +39,7 @@ Vulkan::SwapChain::SwapChainSupportDetails
 	return details;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 VkSurfaceFormatKHR
 	Vulkan::SwapChain::ChooseSwapSurfaceFormat(std::vector<VkSurfaceFormatKHR> formats)
 {
@@ -52,7 +52,7 @@ VkSurfaceFormatKHR
 	return formats[0];
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 VkPresentModeKHR
 	Vulkan::SwapChain::ChooseSwapPresentMode(std::vector<VkPresentModeKHR> presentModes)
 {
@@ -63,7 +63,7 @@ VkPresentModeKHR
 	return VK_PRESENT_MODE_FIFO_KHR;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 VkExtent2D Vulkan::SwapChain::ChooseSwapExtent(VkSurfaceCapabilitiesKHR capabilities)
 {
 	if (capabilities.currentExtent.width != UINT32_MAX) return capabilities.currentExtent;
@@ -86,7 +86,7 @@ VkExtent2D Vulkan::SwapChain::ChooseSwapExtent(VkSurfaceCapabilitiesKHR capabili
 	return actualExtent;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 void Vulkan::SwapChain::Create()
 {
 	SwapChainSupportDetails swapChainSupport = QuerySwapChainSupport(Device::Physical::Get());
@@ -139,17 +139,17 @@ void Vulkan::SwapChain::Create()
 	ImageViews::SetSwapChainExtent(s_Extent);
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 VkSwapchainKHR Vulkan::SwapChain::Get() { return s_SwapChain; }
 
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 void Vulkan::SwapChain::Destroy()
 {
 	vkDestroySwapchainKHR(Device::Logical::Get(), s_SwapChain, nullptr);
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 
 VkExtent2D Vulkan::SwapChain::GetExtent() { return s_Extent; }
 
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/

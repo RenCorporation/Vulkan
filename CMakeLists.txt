@@ -14,7 +14,7 @@ find_package(glm REQUIRED)
 message(${CMAKE_SOURCE_DIR})
 
 add_executable(VulkanTutorial Source/main.cpp
-                              Source/Vulkan/Vulkan.h
+                              Source/Vulkan/Vulkan.hpp
                               Source/Vulkan/Window/Window.cpp Source/Vulkan/Window/Window.hpp
                               Source/Vulkan/Instance/Instance.cpp Source/Vulkan/Instance/Instance.hpp
                               Source/Vulkan/ValidationLayer/ValidationLayer.cpp Source/Vulkan/ValidationLayer/ValidationLayer.hpp

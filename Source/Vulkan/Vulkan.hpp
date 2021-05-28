@@ -2,6 +2,7 @@
 
 #include "Device/Device.hpp"
 #include "Extensions/Extensions.hpp"
+#include "RenderPass/RenderPass.hpp"
 #include "GraphicsPipeline/GraphicsPipeline.hpp"
 #include "ImageView/ImageView.hpp"
 #include "Instance/Instance.hpp"

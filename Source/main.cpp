@@ -1,4 +1,4 @@
-#include "Vulkan/Vulkan.h"
+#include "Vulkan/Vulkan.hpp"
 
 void Cleanup()
 {
@@ -23,6 +23,7 @@ int main()
 	Vulkan::Device::Logical::Create();
 
 	Vulkan::SwapChain::Create();
+	Vulkan::RenderPass::Create();
 	Vulkan::GraphicsPipeline::Create();
 
 	Vulkan::Window::MainLoop();
