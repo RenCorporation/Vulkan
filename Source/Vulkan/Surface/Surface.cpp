@@ -1,6 +1,6 @@
 #include "Surface.hpp"
-#include "../Instance/Instance.hpp"
-#include "../Window/Window.hpp"
+#include ".Instance/Instance.hpp"
+#include ".Window/Window.hpp"
 
 VkSurfaceKHR s_Surface;
 

@@ -14,8 +14,8 @@ void Vulkan::GraphicsPipeline::Destroy()
 /*----------------------------------------------------------------------------------------------------------*/
 void Vulkan::GraphicsPipeline::Create()
 {
-	auto vertShaderSource = Vulkan::Shader::ReadFile("../Assets/Shaders/vert.spv");
-	auto fragShaderSource = Vulkan::Shader::ReadFile("../Assets/Shaders/frag.spv");
+	auto vertShaderSource = Vulkan::Shader::ReadFile(".Assets/Shaders/vert.spv");
+	auto fragShaderSource = Vulkan::Shader::ReadFile(".Assets/Shaders/frag.spv");
 
 	VkShaderModule vertShaderModule = Vulkan::Shader::CreateShader(vertShaderSource);
 	VkShaderModule fragShaderModule = Vulkan::Shader::CreateShader(fragShaderSource);

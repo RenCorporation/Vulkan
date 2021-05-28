@@ -4,7 +4,7 @@
 #include <fstream>
 #include <vector>
 #include <vulkan/vulkan.h>
-#include "../Device/Device.hpp"
+#include ".Device/Device.hpp"
 
 namespace Vulkan::Shader
 {
