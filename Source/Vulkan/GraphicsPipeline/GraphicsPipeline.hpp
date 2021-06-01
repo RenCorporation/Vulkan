@@ -3,12 +3,15 @@
 #include <vulkan/vulkan.h>
 #include "../Shader/Shader.hpp"
 #include "../SwapChain/SwapChain.hpp"
+#include "../RenderPass/RenderPass.hpp"
 
 namespace Vulkan::GraphicsPipeline
 {
 	void Create();
 
-	VkPipelineLayout Get();
+	VkPipeline Get();
+
+	VkPipelineLayout GetLayout();
 
 	void Destroy();
 }
