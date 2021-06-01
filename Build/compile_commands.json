@@ -81,5 +81,11 @@
   "directory": "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Build",
   "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Framebuffers/Framebuffers.cpp.o -c /media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Source/Vulkan/Framebuffers/Framebuffers.cpp",
   "file": "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Source/Vulkan/Framebuffers/Framebuffers.cpp"
+},
+
+{
+  "directory": "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++2a -o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/CommandBuffers/CommandBuffers.cpp.o -c /media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Source/Vulkan/CommandBuffers/CommandBuffers.cpp",
+  "file": "/media/osdev/Esteress/Codebase/Learn/VulkanTutorial/Source/Vulkan/CommandBuffers/CommandBuffers.cpp"
 }
 ]

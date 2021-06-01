@@ -145,6 +145,12 @@ build CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Framebuffers/Framebuffers.cpp.
   OBJECT_DIR = CMakeFiles/VulkanTutorial.dir
   OBJECT_FILE_DIR = CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Framebuffers
 
+build CMakeFiles/VulkanTutorial.dir/Source/Vulkan/CommandBuffers/CommandBuffers.cpp.o: CXX_COMPILER__VulkanTutorial ../Source/Vulkan/CommandBuffers/CommandBuffers.cpp || cmake_object_order_depends_target_VulkanTutorial
+  DEP_FILE = CMakeFiles/VulkanTutorial.dir/Source/Vulkan/CommandBuffers/CommandBuffers.cpp.o.d
+  FLAGS = -g   -std=gnu++2a
+  OBJECT_DIR = CMakeFiles/VulkanTutorial.dir
+  OBJECT_FILE_DIR = CMakeFiles/VulkanTutorial.dir/Source/Vulkan/CommandBuffers
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target VulkanTutorial
@@ -153,7 +159,7 @@ build CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Framebuffers/Framebuffers.cpp.
 #############################################
 # Link the executable VulkanTutorial
 
-build VulkanTutorial: CXX_EXECUTABLE_LINKER__VulkanTutorial CMakeFiles/VulkanTutorial.dir/Source/main.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Window/Window.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Instance/Instance.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ValidationLayer/ValidationLayer.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Extensions/Extensions.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Surface/Surface.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Device/Device.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Queue/Queue.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/SwapChain/SwapChain.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ImageView/ImageView.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Shader/Shader.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/RenderPass/RenderPass.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Framebuffers/Framebuffers.cpp.o | /usr/lib/x86_64-linux-gnu/libvulkan.so
+build VulkanTutorial: CXX_EXECUTABLE_LINKER__VulkanTutorial CMakeFiles/VulkanTutorial.dir/Source/main.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Window/Window.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Instance/Instance.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ValidationLayer/ValidationLayer.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Extensions/Extensions.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Surface/Surface.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Device/Device.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Queue/Queue.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/SwapChain/SwapChain.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/ImageView/ImageView.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Shader/Shader.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/RenderPass/RenderPass.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/Framebuffers/Framebuffers.cpp.o CMakeFiles/VulkanTutorial.dir/Source/Vulkan/CommandBuffers/CommandBuffers.cpp.o | /usr/lib/x86_64-linux-gnu/libvulkan.so
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libvulkan.so  -lglfw3  -lrt  -lm  -ldl  -lX11  -lpthread  -lxcb  -lXau  -lXdmcp
   OBJECT_DIR = CMakeFiles/VulkanTutorial.dir
