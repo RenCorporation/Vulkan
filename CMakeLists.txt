@@ -27,4 +27,5 @@ add_executable(VulkanTutorial Source/main.cpp
                               Source/Vulkan/GraphicsPipeline/GraphicsPipeline.cpp Source/Vulkan/GraphicsPipeline/GraphicsPipeline.hpp
                               Source/Vulkan/Shader/Shader.cpp Source/Vulkan/Shader/Shader.hpp
                               Source/Vulkan/RenderPass/RenderPass.cpp Source/Vulkan/RenderPass/RenderPass.hpp
+                              Source/Vulkan/Framebuffers/Framebuffers.cpp Source/Vulkan/Framebuffers/Framebuffers.hpp
 )
