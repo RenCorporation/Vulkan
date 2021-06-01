@@ -5,6 +5,7 @@ void Cleanup()
 	Vulkan::Window::Destroy();
 	// All child objects created using instance must have been destroyed prior to destroying
 	// instance
+	Vulkan::Command::DestroyPool();
 	Vulkan::Framebuffers::Destroy();
 	Vulkan::GraphicsPipeline::Destroy();
 	Vulkan::RenderPass::Destroy();
@@ -25,8 +26,12 @@ int main()
 	Vulkan::Device::Logical::Create();
 
 	Vulkan::SwapChain::Create();
+	Vulkan::ImageViews::Create();
 	Vulkan::RenderPass::Create();
 	Vulkan::GraphicsPipeline::Create();
+	Vulkan::Framebuffers::Create();
+	Vulkan::Command::CreatePool();
+	Vulkan::Command::CreateBuffers();
 
 	Vulkan::Window::MainLoop();
 

@@ -8,8 +8,11 @@
 #include "../SwapChain/SwapChain.hpp"
 #include "../Device/Device.hpp"
 
-namespace Vulkan::Framebuffers {
-    void Create();
+namespace Vulkan::Framebuffers
+{
+	std::vector<VkFramebuffer> Get();
 
-    void Destroy();
+	void Create();
+
+	void Destroy();
 }

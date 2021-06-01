@@ -27,6 +27,16 @@ VkExtent2D Vulkan::ImageViews::GetSwapChainExtent() { return s_SwapChainExtent; 
 void Vulkan::ImageViews::SetSwapChainExtent(VkExtent2D extent) { s_SwapChainExtent = extent; }
 
 /*-----------------------------------------------------------------------------------------------*/
+void Vulkan::ImageViews::CreateImagesMemory(uint32_t *imageCount)
+{
+	s_SwapChainImages.resize(*imageCount);
+	vkGetSwapchainImagesKHR(Device::Logical::Get(),
+							SwapChain::Get(),
+							imageCount,
+							s_SwapChainImages.data());
+}
+
+/*-----------------------------------------------------------------------------------------------*/
 void Vulkan::ImageViews::Destroy()
 {
 	for (auto imageView : Vulkan::ImageViews::GetImageViews())
@@ -45,6 +55,7 @@ void Vulkan::ImageViews::Create()
 		VkImageViewCreateInfo createInfo {};
 		createInfo.sType                           = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO;
 		createInfo.image                           = s_SwapChainImages[i];
+		createInfo.viewType                        = VK_IMAGE_VIEW_TYPE_2D;
 		createInfo.format                          = s_SwapChainImageFormat;
 		createInfo.components.r                    = VK_COMPONENT_SWIZZLE_IDENTITY;
 		createInfo.components.g                    = VK_COMPONENT_SWIZZLE_IDENTITY;

@@ -114,15 +114,16 @@ void Vulkan::GraphicsPipeline::Create()
 	colorBlendStateCreateInfo.blendConstants[2] = 0.0f;
 	colorBlendStateCreateInfo.blendConstants[3] = 0.0f;
 
-	VkDynamicState dynamicStates[] = {
-		VK_DYNAMIC_STATE_VIEWPORT,
-		VK_DYNAMIC_STATE_LINE_WIDTH,
-	};
+	// VkDynamicState dynamicStates[] = {
+	// 	VK_DYNAMIC_STATE_VIEWPORT,
+	// 	VK_DYNAMIC_STATE_LINE_WIDTH,
+	// };
 
-	VkPipelineDynamicStateCreateInfo dynamicStateCreateInfo {};
-	dynamicStateCreateInfo.sType             = VK_STRUCTURE_TYPE_PIPELINE_DYNAMIC_STATE_CREATE_INFO;
-	dynamicStateCreateInfo.dynamicStateCount = 2;
-	dynamicStateCreateInfo.pDynamicStates    = dynamicStates;
+	// VkPipelineDynamicStateCreateInfo dynamicStateCreateInfo {};
+	// dynamicStateCreateInfo.sType             =
+	// VK_STRUCTURE_TYPE_PIPELINE_DYNAMIC_STATE_CREATE_INFO;
+	// dynamicStateCreateInfo.dynamicStateCount = 2;
+	// dynamicStateCreateInfo.pDynamicStates    = dynamicStates;
 
 	VkPipelineLayoutCreateInfo pipelineLayoutCreateInfo {};
 	pipelineLayoutCreateInfo.sType                  = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;
@@ -149,13 +150,13 @@ void Vulkan::GraphicsPipeline::Create()
 	pipelineCreateInfo.pMultisampleState   = &multisampleStateCreateInfo;
 	pipelineCreateInfo.pDepthStencilState  = nullptr;
 	pipelineCreateInfo.pColorBlendState    = &colorBlendStateCreateInfo;
-	pipelineCreateInfo.pDynamicState       = nullptr;  // Review This if any errors
-	pipelineCreateInfo.pDynamicState       = &dynamicStateCreateInfo;
-	pipelineCreateInfo.layout              = s_PipelineLayout;
-	pipelineCreateInfo.renderPass          = Vulkan::RenderPass::Get();
-	pipelineCreateInfo.subpass             = 0;
-	pipelineCreateInfo.basePipelineHandle  = VK_NULL_HANDLE;
-	pipelineCreateInfo.basePipelineIndex   = -1;
+	// pipelineCreateInfo.pDynamicState       = &dynamicStateCreateInfo;
+	pipelineCreateInfo.pDynamicState      = nullptr;  // For dynamic state comment this out.
+	pipelineCreateInfo.layout             = s_PipelineLayout;
+	pipelineCreateInfo.renderPass         = Vulkan::RenderPass::Get();
+	pipelineCreateInfo.subpass            = 0;
+	pipelineCreateInfo.basePipelineHandle = VK_NULL_HANDLE;
+	pipelineCreateInfo.basePipelineIndex  = -1;
 
 	VkResult result = vkCreateGraphicsPipelines(Device::Logical::Get(),
 												VK_NULL_HANDLE,

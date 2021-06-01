@@ -3,6 +3,9 @@
 std::vector<VkFramebuffer> s_SwapChainFrameBuffers;
 
 /*-----------------------------------------------------------------------------------------------*/
+std::vector<VkFramebuffer> Vulkan::Framebuffers::Get() { return s_SwapChainFrameBuffers; }
+
+/*-----------------------------------------------------------------------------------------------*/
 void Vulkan::Framebuffers::Create()
 {
 	s_SwapChainFrameBuffers.resize(ImageViews::GetImageViews().size());

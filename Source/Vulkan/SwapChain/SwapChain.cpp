@@ -135,6 +135,8 @@ void Vulkan::SwapChain::Create()
 		vkCreateSwapchainKHR(Device::Logical::Get(), &createInfo, nullptr, &s_SwapChain);
 	if (result != VK_SUCCESS) { throw std::runtime_error("Failed to create SwapChain"); }
 
+	vkGetSwapchainImagesKHR(Device::Logical::Get(), s_SwapChain, &imageCount, nullptr);
+	ImageViews::CreateImagesMemory(&imageCount);
 	ImageViews::SetSwapChainImageFormat(surfaceFormat.format);
 	ImageViews::SetSwapChainExtent(s_Extent);
 }
