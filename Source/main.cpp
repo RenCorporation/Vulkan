@@ -5,6 +5,7 @@ void Cleanup()
 	Vulkan::Window::Destroy();
 	// All child objects created using instance must have been destroyed prior to destroying
 	// instance
+	Vulkan::Framebuffers::Destroy();
 	Vulkan::GraphicsPipeline::Destroy();
 	Vulkan::RenderPass::Destroy();
 	Vulkan::ImageViews::Destroy();
