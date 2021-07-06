@@ -2,7 +2,7 @@
 
 std::vector<const char *> s_Extensions { VK_KHR_SWAPCHAIN_EXTENSION_NAME };
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 std::vector<const char *> Vulkan::Extensions::GetRequiredExtensions()
 {
 	uint32_t     glfwExtensionCount = 0;
@@ -16,10 +16,10 @@ std::vector<const char *> Vulkan::Extensions::GetRequiredExtensions()
 	return extensions;
 }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 std::vector<const char *> Vulkan::Extensions::GetEnabledExtensions() { return s_Extensions; }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 bool Vulkan::Extensions::CheckDeviceExtensionSupport(VkPhysicalDevice device)
 {
 	uint32_t extensionCount;
@@ -41,4 +41,4 @@ bool Vulkan::Extensions::CheckDeviceExtensionSupport(VkPhysicalDevice device)
 	return requiredExtensions.empty();
 }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/

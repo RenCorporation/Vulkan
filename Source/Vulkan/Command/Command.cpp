@@ -3,7 +3,7 @@
 VkCommandPool                s_CommandPool;
 std::vector<VkCommandBuffer> s_CommandBuffers;
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 void Vulkan::Command::CreatePool()
 {
 	Queue::QueueFamilyIndex queueFamilyIndices = Queue::FindQueueFamilies(Device::Physical::Get());
@@ -18,13 +18,13 @@ void Vulkan::Command::CreatePool()
 	if (result != VK_SUCCESS) { throw std::runtime_error("Cannot create Command Pool"); }
 }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 void Vulkan::Command::DestroyPool()
 {
 	vkDestroyCommandPool(Device::Logical::Get(), s_CommandPool, nullptr);
 }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 void Vulkan::Command::CreateBuffers()
 {
     s_CommandBuffers.resize(Framebuffers::Get().size());
@@ -77,4 +77,4 @@ void Vulkan::Command::CreateBuffers()
 	}
 }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/

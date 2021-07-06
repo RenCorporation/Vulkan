@@ -3,20 +3,20 @@
 VkPipeline       s_Pipeline;
 VkPipelineLayout s_PipelineLayout;
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 VkPipeline Vulkan::GraphicsPipeline::Get() { return s_Pipeline; }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 VkPipelineLayout Vulkan::GraphicsPipeline::GetLayout() { return s_PipelineLayout; }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 void Vulkan::GraphicsPipeline::Destroy()
 {
 	vkDestroyPipeline(Device::Logical::Get(), s_Pipeline, nullptr);
 	vkDestroyPipelineLayout(Device::Logical::Get(), s_PipelineLayout, nullptr);
 }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
 void Vulkan::GraphicsPipeline::Create()
 {
 	auto vertShaderSource = Vulkan::Shader::ReadFile("../Assets/Shaders/vert.spv");
@@ -171,4 +171,4 @@ void Vulkan::GraphicsPipeline::Create()
 	vkDestroyShaderModule(Device::Logical::Get(), fragShaderModule, nullptr);
 }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
